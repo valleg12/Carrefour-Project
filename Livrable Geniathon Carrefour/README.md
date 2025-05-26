@@ -23,11 +23,7 @@ Ce dossier contient tous les livrables du projet de vérification de marques pou
 - Instructions d'installation
 - Guide de déploiement
 
-### E4 - Fichier Excel
-- Documentation du fichier source
-- Structure des données
-- Format des résultats
-- Instructions d'utilisation
+### E4 - Fichier CSV
 
 ## Utilisation
 
