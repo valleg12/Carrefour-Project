@@ -50,6 +50,26 @@ Carrefour-Project/
 - Génération de rapports
 - Documentation : `brand_analysis/README.md`
 
+### 2.3 Utilisation des Tokens
+- **Prompt par requête** : ~600 tokens
+- **Réponse par requête** : ~300-400 tokens
+- **Total par requête** : ~900-1000 tokens
+- **Total pour 285 marques** : ~333,000-370,000 tokens
+  - 200 vérifications simples
+  - 85 vérifications doubles
+  - 370 vérifications au total
+
+### 2.4 Coûts d'Utilisation
+- **GPT-4 Turbo** : 0.03$ par 1K tokens
+  - Coût total : ~10-11$ pour 285 marques
+- **GPT-3.5 Turbo** : 0.002$ par 1K tokens
+  - Coût total : ~0.67-0.74$ pour 285 marques
+
+### 2.5 Optimisations
+- Système de cache pour éviter les vérifications en double
+- Vérification hybride (GPT-3.5 pour les cas simples, GPT-4 pour les cas complexes)
+- Optimisation des prompts pour réduire la taille
+
 ## 3. Instructions d'Installation et de Déploiement
 
 ### 3.1 Prérequis
