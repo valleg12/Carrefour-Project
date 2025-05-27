@@ -61,7 +61,43 @@ Outil d'analyse des marques et de leurs relations (en développement).
 - Docker (recommandé pour Perplexica)
 - Ollama (pour les modèles locaux)
 
-### 2. Installation de Perplexica
+### 2. Installation de Docker
+
+#### macOS
+1. Téléchargez Docker Desktop depuis [docker.com](https://www.docker.com/products/docker-desktop)
+2. Installez l'application en la glissant dans le dossier Applications
+3. Lancez Docker Desktop et attendez que l'icône dans la barre de menu indique que Docker est prêt
+
+#### Windows
+1. Téléchargez Docker Desktop depuis [docker.com](https://www.docker.com/products/docker-desktop)
+2. Exécutez l'installateur et suivez les instructions
+3. Redémarrez votre ordinateur si demandé
+4. Lancez Docker Desktop depuis le menu Démarrer
+
+#### Linux (Ubuntu)
+```bash
+# Mise à jour des paquets
+sudo apt update
+sudo apt upgrade
+
+# Installation des prérequis
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+# Ajout de la clé GPG Docker
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# Ajout du dépôt Docker
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+# Installation de Docker
+sudo apt update
+sudo apt install docker-ce
+
+# Vérification de l'installation
+sudo docker run hello-world
+```
+
+### 3. Installation de Perplexica
 
 Il y a deux façons d'installer Perplexica - Avec Docker (recommandé) ou Sans Docker.
 
@@ -89,7 +125,7 @@ docker compose up -d
 
 6. Accédez à Perplexica via http://localhost:3000
 
-### 3. Installation du Projet
+### 4. Installation du Projet
 
 1. Clonez le dépôt :
 ```bash
