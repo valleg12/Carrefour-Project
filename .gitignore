@@ -1,35 +1,80 @@
-# Python
+# Environment
+.env
+venv/
 __pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Cache
+cache/
+*.cache
+
+# Data
+*.csv
+!Carrefour\ Geniathon\ -\ Tableau\ origine.csv
+
+# System
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Distribution
+dist/
+build/
+*.egg-info/
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Documentation
+docs/_build/
+site/
+
+# Python
 *.py[cod]
 *$py.class
 *.so
 .Python
-build/
 develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
 sdist/
 var/
 wheels/
-*.egg-info/
 .installed.cfg
 *.egg
 
 # Virtual Environment
+ENV/
+
+# OS
 .env
 .venv
 env/
-venv/
-ENV/
+
+# Project specific
+*.egg-info/
+.installed.cfg
+*.egg
 
 # IDE
-.idea/
-.vscode/
 *.swp
 *.swo
 
