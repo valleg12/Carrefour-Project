@@ -55,13 +55,49 @@ Outil d'analyse des marques et de leurs relations (en développement).
 
 ## Installation
 
-1. Cloner le dépôt :
+### 1. Prérequis
+
+- Python 3.8 ou supérieur
+- Docker (recommandé pour Perplexica)
+- Ollama (pour les modèles locaux)
+
+### 2. Installation de Perplexica
+
+Il y a deux façons d'installer Perplexica - Avec Docker (recommandé) ou Sans Docker.
+
+#### Installation avec Docker (Recommandé)
+
+1. Assurez-vous que Docker est installé et en cours d'exécution sur votre système.
+
+2. Clonez le dépôt Perplexica :
+```bash
+git clone https://github.com/ItzCrazyKns/Perplexica.git
+```
+
+3. Naviguez vers le répertoire du projet et renommez `sample.config.toml` en `config.toml`.
+
+4. Configurez le fichier `config.toml` :
+   - OPENAI : Votre clé API OpenAI (si vous utilisez les modèles OpenAI)
+   - OLLAMA : URL de l'API Ollama (http://host.docker.internal:11434 par défaut)
+   - GROQ : Votre clé API Groq (si vous utilisez les modèles Groq)
+   - ANTHROPIC : Votre clé API Anthropic (si vous utilisez les modèles Anthropic)
+
+5. Lancez Perplexica avec Docker :
+```bash
+docker compose up -d
+```
+
+6. Accédez à Perplexica via http://localhost:3000
+
+### 3. Installation du Projet
+
+1. Clonez le dépôt :
 ```bash
 git clone https://github.com/valleg12/Carrefour-Project.git
 cd Carrefour-Project
 ```
 
-2. Installer les dépendances :
+2. Installez les dépendances Python :
 ```bash
 pip install -r requirements.txt
 ```
