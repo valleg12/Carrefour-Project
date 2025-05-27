@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, BarChart3, Shield, Clock, DollarSign, Users, Zap, CheckCircle, TrendingUp, Calendar, Phone, DownloadIcon, AlertCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
-import { Switch } from "@/components/ui/switch";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Badge } from "@/components/ui/badge";
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Progress } from '../components/ui/progress';
+import { Switch } from "../components/ui/switch";
+import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert";
+import { Badge } from "../components/ui/badge";
 import PresentationSlide from './PresentationSlide';
 
 const BrandPresentation = () => {

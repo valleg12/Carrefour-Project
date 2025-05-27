@@ -6,16 +6,18 @@ import { Toaster } from './components/ui/toaster';
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Router>
-        <div className="min-h-screen bg-background">
-          <Routes>
-            <Route path="/" element={<BrandPresentation />} />
-          </Routes>
-        </div>
-        <Toaster />
-      </Router>
-    </ThemeProvider>
+    <>
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <Router>
+          <div className="min-h-screen bg-background">
+            <Routes>
+              <Route path="/" element={<BrandPresentation />} />
+            </Routes>
+          </div>
+          <Toaster />
+        </Router>
+      </ThemeProvider>
+    </>
   );
 }
 
